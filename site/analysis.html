@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iris Analysis Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f8fafc; color: #1f2937; }
+    .container { max-width: 900px; margin: 40px auto; padding: 24px; background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; }
+    h1, h2 { color: #111827; }
+    pre { background: #f3f4f6; padding: 12px; overflow-x: auto; border-radius: 6px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+    th, td { border: 1px solid #d1d5db; padding: 8px; text-align: left; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Beginner-Friendly Iris Data Analysis</h1>
+    <p><a href="index.html">Back to homepage</a></p>
+
+    <h2>1. Dataset Loading</h2>
+    <p>The notebook loads Iris data from:</p>
+    <pre>https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv</pre>
+
+    <h2>2. Basic EDA</h2>
+    <p>Checked dataset shape, columns, missing values, and summary statistics with <code>describe()</code>.</p>
+
+    <h2>3. Histogram Visualization</h2>
+    <p>Created histograms for numeric columns to understand feature distributions.</p>
+
+    <h2>4. Groupby Analysis</h2>
+    <p>Grouped by species and calculated mean values:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>species</th>
+          <th>sepal_length</th>
+          <th>sepal_width</th>
+          <th>petal_length</th>
+          <th>petal_width</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>setosa</td><td>5.01</td><td>3.43</td><td>1.46</td><td>0.25</td></tr>
+        <tr><td>versicolor</td><td>5.94</td><td>2.77</td><td>4.26</td><td>1.33</td></tr>
+        <tr><td>virginica</td><td>6.59</td><td>2.97</td><td>5.55</td><td>2.03</td></tr>
+      </tbody>
+    </table>
+
+    <h2>5. Final Conclusion</h2>
+    <ul>
+      <li>The dataset is clean (no missing values).</li>
+      <li>Feature distributions differ across measurements.</li>
+      <li>Species are clearly separated by petal measurements.</li>
+      <li>This is a good beginner template for Python data analysis.</li>
+    </ul>
+
+    <p><strong>Note:</strong> In CI/CD, this page is generated from <code>notebooks/analysis.ipynb</code> using <code>nbconvert</code>.</p>
+  </div>
+</body>
+</html>
